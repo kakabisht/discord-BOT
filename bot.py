@@ -1,4 +1,4 @@
-from botkey import token
+from botkey import token    # This library just contains the Bot token
 import discord
 
 client = discord.Client()
