@@ -13,7 +13,7 @@ Clone this repository in your system,
 then in your terminal, create a virtual environment where you have cloned this repository by: 
 > python3 -m venv <virtual_environment_name>
 
-## For windows:
+## For Windows:
 In your working directory where you have created the virtual environment, activate the virtual environment by:
 > <virtual_environment_name>\Scripts\activate.bat
 
@@ -25,5 +25,5 @@ In your working directory where you have created the virtual environment, activa
 > pip install -r requirements.txt
 
 note: (This script is written for the bash shell. If you use the csh or fish shells, there are alternate activate.csh and activate.fish scripts you should use instead.)
- 
-you are all set now. Happy developing!
+
+You are all set now. Happy developing!
