@@ -1,18 +1,19 @@
-from botkey import token    # This library just contains the Bot token
+from botkey import token    # This just contains the Bot token
 import discord
+from discord.ext import commands
 
-client = discord.Client()
+client = commands.Bot(command_prefix=">")
 
 @client.event
 async def on_ready():
-    print('We have logged in as {0.user}'.format(client))
+    print("Bot is ready.")
 
 @client.event
-async def on_message(message):
-    if message.author == client.user:
-        return
+async def on_member_join(member):
+    print(f"{member} has joined the server")
 
-    if message.content.startswith('$hello'):
-        await message.channel.send('Hello!')
+@client.event
+async def on_member_remove(member):
+    print(f"{member} has left the servver")
 
 client.run(token)
