@@ -1,4 +1,4 @@
-from botkey import token
+from botkey import *
 import discord
 
 client = discord.Client()
@@ -13,6 +13,6 @@ async def on_message(message):
         return
 
     if message.content.startswith('$hello'):
-        await message.channel.send('Hello!')
+        await message.channel.send('Hello there!')
 
 client.run(token)
